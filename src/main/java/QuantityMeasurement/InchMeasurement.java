@@ -1,9 +1,9 @@
 package QuantityMeasurement;
 
-public class FeetMeasurement {
+public class InchMeasurement {
     private final double value;
 
-    public FeetMeasurement(double value) {
+    public InchMeasurement(double value) {
         this.value=value;
     }
 
@@ -11,7 +11,7 @@ public class FeetMeasurement {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        FeetMeasurement that = (FeetMeasurement) o;
+        InchMeasurement that = (InchMeasurement) o;
         return Double.compare(that.value, value) == 0;
     }
 
